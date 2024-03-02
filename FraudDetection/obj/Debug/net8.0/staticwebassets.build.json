@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "CP+FjFvMKF31IpKJ25kHN2mCNi4SqhcpD21mzKxxVJU=",
+  "Source": "FraudDetection",
+  "BasePath": "_content/FraudDetection",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

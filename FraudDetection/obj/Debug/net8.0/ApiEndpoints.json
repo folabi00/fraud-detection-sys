@@ -1,0 +1,44 @@
+[
+  {
+    "ContainingType": "AdminAuth.Controllers.AdminController",
+    "Method": "AdminAuthenticated",
+    "RelativePath": "api/Admin/IsAdmin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AdminAuth.Controllers.LoginController",
+    "Method": "Login",
+    "RelativePath": "api/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "adminLogin",
+        "Type": "AdminAuth.Models.AdminLogin",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AdminAuth.Controllers.PaymentController",
+    "Method": "ProcessPayment",
+    "RelativePath": "api/Payment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "paymentData",
+        "Type": "AdminAuth.Models.PaymentModel.PaymentData",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
