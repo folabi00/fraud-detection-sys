@@ -18,14 +18,14 @@ namespace AdminAuth.Controllers
             return Ok($" {AdminAuthentication.UserName} is authorized");
         }
        
-        private AdminModel GetAdminAuthentication() 
+        private Admin GetAdminAuthentication() 
         {
             var identity = HttpContext.User.Identity as ClaimsIdentity;
 
             if (identity != null)
             {
                 var adminClaims = identity.Claims;
-                return new AdminModel
+                return new Admin
                 {
                     UserName = adminClaims.FirstOrDefault(a => a.Type == ClaimTypes.NameIdentifier)?.Value,
                     EmailAddress = adminClaims.FirstOrDefault(a => a.Type == ClaimTypes.Email)?.Value,

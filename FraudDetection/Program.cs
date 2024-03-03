@@ -33,6 +33,17 @@ namespace FraudDetection
 
                    };
                });
+
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowOrigin", builder =>
+                {
+                    builder.WithOrigins("*").AllowAnyHeader().AllowAnyMethod();
+                });
+
+
+            });
+
             builder.Services.AddMvc();
             builder.Services.AddControllers();
             builder.Services.AddRazorPages();
@@ -51,6 +62,8 @@ namespace FraudDetection
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+            app.UseCors("Allow Origin");
 
             app.UseHttpsRedirection();
 
