@@ -47,7 +47,7 @@ namespace AdminAuth.Controllers
         }
 
         //Generate method which performs the token generation function
-        private string Generate(AdminModel admin) 
+        private string Generate(Admin admin) 
         {
             var securitykey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
             var credentials = new SigningCredentials(securitykey, SecurityAlgorithms.HmacSha256);
@@ -66,7 +66,7 @@ namespace AdminAuth.Controllers
         }
 
         //Authentication method which performs the authenticate funtion
-        private AdminModel Authenticate(AdminLogin adminLogin)
+        private Admin Authenticate(AdminLogin adminLogin)
         {
             var currentadmin = AdminInfo.Admins.FirstOrDefault(a => a.UserName.ToLower() == adminLogin.UserName.ToLower()
             && a.Password.ToLower() == adminLogin.Password.ToLower());

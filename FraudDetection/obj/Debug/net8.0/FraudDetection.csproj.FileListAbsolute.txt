@@ -40,3 +40,6 @@ C:\Users\olubu\source\repos\FraudDetection\FraudDetection\bin\Debug\net8.0\Micro
 C:\Users\olubu\source\repos\FraudDetection\FraudDetection\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\olubu\source\repos\FraudDetection\FraudDetection\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\olubu\source\repos\FraudDetection\FraudDetection\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\olubu\source\repos\FraudDetection\FraudDetection\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\olubu\source\repos\FraudDetection\FraudDetection\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\olubu\source\repos\FraudDetection\FraudDetection\obj\Debug\net8.0\FraudDetection.sourcelink.json
